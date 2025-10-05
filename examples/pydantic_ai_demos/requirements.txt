@@ -1,0 +1,14 @@
+# Pydantic AI Examples Requirements
+
+# Core Pydantic AI framework
+pydantic-ai>=0.0.1
+
+# Dependencies for the examples
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+
+# OpenAI model support
+openai>=1.0.0
+
+# Optional: For enhanced logging and monitoring
+rich>=13.0.0

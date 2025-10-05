@@ -9,10 +9,18 @@ from tohu.scenarios.agent_behavior.rogue_agent import RogueAgentScenario
 from tohu.scenarios.agent_behavior.stupid_selectors import StupidSelectorsScenario
 from tohu.scenarios.agent_behavior.abrupt_conversations import AbruptConversationsScenario
 from tohu.scenarios.agent_behavior.wrong_termination import WrongTerminationScenario
+from tohu.scenarios.agent_behavior.unfulfillable_tasks import (
+    ObviousUnfulfillableTaskScenario,
+    SubtleUnfulfillableTaskScenario,
+    LLMGeneratedUnfulfillableTaskScenario
+)
 
 __all__ = [
     "RogueAgentScenario",
     "StupidSelectorsScenario",
     "AbruptConversationsScenario",
-    "WrongTerminationScenario"
+    "WrongTerminationScenario",
+    "ObviousUnfulfillableTaskScenario",
+    "SubtleUnfulfillableTaskScenario",
+    "LLMGeneratedUnfulfillableTaskScenario"
 ]
