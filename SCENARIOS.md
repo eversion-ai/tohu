@@ -4,11 +4,11 @@ This document provides a comprehensive overview of all implemented chaos enginee
 
 ## Overview
 
-All **15 scenarios** from the user requirements have been successfully implemented and organized into logical categories:
+All **18 scenarios** from the user requirements have been successfully implemented and organized into logical categories:
 
 ## ✅ Implemented Scenarios
 
-### Agent Behavior Scenarios (4/4)
+### Agent Behavior Scenarios (7/7)
 
 #### 1. **RogueAgentScenario** ✅
 - **File**: `src/tohu/scenarios/agent_behavior/rogue_agent.py`
@@ -45,6 +45,33 @@ All **15 scenarios** from the user requirements have been successfully implement
   - Tests infinite loop detection and prevention
   - Validates timeout handling mechanisms
   - Monitors goal recognition capabilities
+
+#### 5. **ObviousUnfulfillableTaskScenario** ✅
+- **File**: `src/tohu/scenarios/agent_behavior/unfulfillable_tasks.py`
+- **Purpose**: Tests guardrails for detecting obviously impossible tasks
+- **Key Features**:
+  - Presents clearly unfulfillable requests (e.g., "delete the internet")
+  - Tests basic task validation and rejection mechanisms
+  - Validates resource protection from impossible tasks
+  - Monitors guardrail effectiveness and response patterns
+
+#### 6. **SubtleUnfulfillableTaskScenario** ✅
+- **File**: `src/tohu/scenarios/agent_behavior/unfulfillable_tasks.py`
+- **Purpose**: Tests detection of subtly impossible tasks requiring deep analysis
+- **Key Features**:
+  - Generates tasks with hidden logical contradictions or paradoxes
+  - Tests constraint satisfaction and logical consistency checking
+  - Validates deep analysis capabilities for task feasibility
+  - Monitors sophisticated reasoning and contradiction detection
+
+#### 7. **LLMGeneratedUnfulfillableTaskScenario** ✅
+- **File**: `src/tohu/scenarios/agent_behavior/unfulfillable_tasks.py`
+- **Purpose**: Tests detection of LLM-generated domain-relevant but impossible tasks
+- **Key Features**:
+  - Dynamically generates impossible tasks based on user-provided purposes
+  - Maintains domain relevance while embedding impossibilities
+  - Tests adversarial task generation and detection capabilities
+  - Validates domain-aware impossibility detection systems
 
 ### Infrastructure Scenarios (6/6)
 
